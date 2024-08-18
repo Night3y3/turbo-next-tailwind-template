@@ -4,9 +4,9 @@ import "./globals.css"
 export default function Home() {
   return (
     <div className="">
-      Hello
-      <Card title="World" href="https://google.com">
-        Turbo-Starter
+      Next
+      <Card title="Link" href="https://turbo.build/repo/docs">
+        Turbo-Starter-With-Tailwind
       </Card>
     </div>
   );
