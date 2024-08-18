@@ -1,5 +1,5 @@
 {
-  "name": "bank-app",
+  "name": "turbo-next-tailwind-template",
   "private": true,
   "scripts": {
     "build": "turbo build",
