@@ -7,9 +7,18 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "prettier",
-    require.resolve("@vercel/style-guide/eslint/next"),
+    [
+      "@vercel/style-guide/eslint/node",
+      "@vercel/style-guide/eslint/typescript",
+      "@vercel/style-guide/eslint/browser",
+      "@vercel/style-guide/eslint/react",
+      "@vercel/style-guide/eslint/next",
+    ].map(require.resolve),
     "turbo",
   ],
+  parserOptions: {
+    project,
+  },
   globals: {
     React: true,
     JSX: true,
@@ -23,6 +32,9 @@ module.exports = {
     "import/resolver": {
       typescript: {
         project,
+      },
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".mjs"],
       },
     },
   },
