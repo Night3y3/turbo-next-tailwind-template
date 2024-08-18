@@ -6,7 +6,7 @@ export default function Home() {
     <div className="">
       Hello
       <Card title="World" href="https://google.com">
-        Sir
+        Turbo-Starter
       </Card>
     </div>
   );
